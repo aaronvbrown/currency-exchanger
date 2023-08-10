@@ -1,8 +1,8 @@
-# _Portfolio - Aaron Brown_
+# _Currency Exchanger_
 
 #### By **Aaron Brown**
 
-#### A starter template for web applications using html, css, javascript and tooling including: npm, webpack, jest, eslint & babel.
+#### A utility for obtaining currency exchanges from US Dollars using the ExchangeRate-API, html, css, javascript and tooling including: npm, webpack, jest, eslint & babel.
 
 ## Technologies Used
 
@@ -19,7 +19,7 @@
 
 ## Description
 
-This project is intended as a starter template for webpack projects using 
+This page returns equivelant currency amounts for a given US Dollar input by users.
 
 ## Setup Requirements
 
@@ -27,8 +27,7 @@ This project is intended as a starter template for webpack projects using
 * install npm **npm install**
 * build the project **npm run build**
 * start the development server **npm run start**
-* open the project through a browser using address:  **http://localhost:8080/**  
-* update boilerplate code in index.html, index.js, package.json and test files.
+* open the project through a browser using address:  **http://localhost:8080/**
 * test the project **npm run test**
 
 ## Known Bugs
