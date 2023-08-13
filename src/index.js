@@ -23,11 +23,11 @@ function printError(error) {
 }
 
 console.log(getCurrencyExchange);
-// function handleFormSubmission(currency) {
-//   currency.preventDefault();
-//   let newCurrency = document.getElementById("results")
-// }
+function handleFormSubmission(currency) {
+  currency.preventDefault();
+  let newCurrency = document.getElementById("results")
+}
 
-// window.addEventListener("load", function() {
-//   document.querySelector("form").addEventListener("submit", handleFormSubmission)
-// })
+window.addEventListener("load", function() {
+  document.querySelector("form").addEventListener("submit", handleFormSubmission)
+})

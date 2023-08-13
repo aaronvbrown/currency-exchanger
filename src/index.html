@@ -8,19 +8,20 @@
 </head>
 
 <body>
-    <label for="inputAmountUSD">Amount in US Dollars:</label>
-    <input id="inputAmountUSD">
-    <br>
-    <label for="currencyChooser">Choose Currency</label>
-    <select id="currencyChooser">
-        <option value="USD">USD</option>
-        <option value="AED">AED</option>
-        <option value="AFN">AFN</option>
-        <option value="ALL">ALL</option>
-        <option value="AMD">AMD</option>
-        <option value="ANG">ANG</option>
-    </select>
-    <form id="converterForm"></form>
+    <form id="converterForm">
+        <label for="inputAmountUSD">Amount in US Dollars:</label>
+        <input id="inputAmountUSD">
+        <br>
+        <label for="currencyChooser">Choose Currency</label>
+        <select id="currencyChooser">
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="AFN">AFN</option>
+            <option value="ALL">ALL</option>
+            <option value="AMD">AMD</option>
+            <option value="ANG">ANG</option>
+        </select>
+    </form>
     <button type="button" id="submitButton">Get Conversion!</button>
     <div id="resultsDiv" class="hidden">
         <h2>Your Conversion:</h2>
