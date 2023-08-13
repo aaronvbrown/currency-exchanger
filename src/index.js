@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import CurrencyExchangerCall from './currency';
 
+// Business Logic
 async function getCurrencyExchange() {
   try {
     const response = await CurrencyExchangerCall.convertCurrency();
@@ -17,15 +18,25 @@ async function getCurrencyExchange() {
   }
 }
 
+//UI Logic
 
-function printError(error) {
-  document.getElementById("resultsDiv").innerText = error.message;
+function printResults(amount, currency) {
+  document.querySelector("#results").innerText = `${amount} in USD is worth ${100} in ${currency}`;
 }
 
-console.log(getCurrencyExchange);
-function handleFormSubmission(currency) {
-  currency.preventDefault();
-  let newCurrency = document.getElementById("results")
+function printError(error) {
+  document.getElementById("results").innerText = error.message;
+}
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  let conversions = getCurrencyExchange;
+  console.log(conversions);
+  let usdAmount = document.querySelector("#inputAmountUSD");
+  let targetCurrency = document.querySelector("#currencyChooser");
+  let results = document.querySelector("#results")
+  printResults(usdAmount, targetCurrency);  
+  results.removeAttribute("class");
 }
 
 window.addEventListener("load", function() {
