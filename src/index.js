@@ -32,8 +32,8 @@ function handleFormSubmission(event) {
   event.preventDefault();
   let conversions = getCurrencyExchange;
   console.log(conversions);
-  let usdAmount = document.querySelector("#inputAmountUSD");
-  let targetCurrency = document.querySelector("#currencyChooser");
+  let usdAmount = document.querySelector("#inputAmountUSD").value;
+  let targetCurrency = document.querySelector("#currencyChooser").value;
   let results = document.querySelector("#results")
   printResults(usdAmount, targetCurrency);  
   results.removeAttribute("class");
