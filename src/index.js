@@ -12,7 +12,7 @@ async function getCurrencyExchange() {
       const errorMessage = `There was a problem with the API:  ${response.message}`;
       throw new Error(errorMessage);
     }
-    return response.conversion_rates;
+    return response.conversion_rates; //maybe just call printResults here instead?
   }
   catch(error){
     printError(error);
@@ -31,9 +31,7 @@ function printError(error) {
 
 function handleFormSubmission(event) {
   event.preventDefault();
-  let conversions = getCurrencyExchange(); //add then here?
-  console.log("hi there");
-  console.log(conversions);
+  let conversions = getCurrencyExchange(); //is a promise.  Async await here?  add then here?
   let usdAmount = document.querySelector("#inputAmountUSD").value;
   let targetCurrency = document.querySelector("#currencyChooser").value;
   let conversionRate = conversions[targetCurrency];
